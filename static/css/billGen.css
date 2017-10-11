@@ -1,0 +1,25 @@
+*{
+    font-family:'Source Sans Pro';
+}
+.well {
+    background: rgba(245, 245, 245, 0.36);
+}
+
+.form .col-sm-3{
+
+}
+
+#form{
+    border-bottom :1px solid #ddd;
+}
+
+legend{
+    color:#aaa;
+    text-align: right;
+}
+
+.basic_info{
+    text-align: right;
+    color:#bbb;
+
+}

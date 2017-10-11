@@ -10,6 +10,9 @@ from django.views import View
 def index(request):
     return render(request, 'index.html', context= {})
 
+def billForm(request):
+    return render(request, 'billForm.html', context={})
+
 class BillingView(View):
 
     def get(self, request):
