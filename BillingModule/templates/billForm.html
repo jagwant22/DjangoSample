@@ -23,29 +23,80 @@
                 <div class="row" id="form">
 
                     <div class="col-sm-12">
-                        <legend>Generate Bill</legend>
+                        <legend>Invoice Builder</legend>
                         <form class="form">
-                            <h4 class="basic_info">Patient Details</h4>
-                            <div class="col-sm-2 ">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                        <h4 class="basic_info">Patient Details</h4>
+                                        <div class="col-sm-2 ">
 
-                                <input class="form-control input-sm" placeholder="Enter Patient Number"> <br />
+                                            <input class="form-control input-sm" placeholder="Enter Patient Number"> <br />
+
+                                        </div>
+                                        <div class="col-sm-2 ">
+                                            <input class="form-control input-sm" placeholder="Enter Patient Name"> <br />
+                                        </div>
+                                        <div class="col-sm-2 ">
+                                            <input class="form-control input-sm" disabled placeholder="Patient Age"> <br />
+                                        </div>
+                                        <div class="col-sm-2 ">
+                                            <input class="form-control input-sm" disabled placeholder="Patient Gender"> <br />
+                                        </div>
+                                        <div class="col-sm-2 " style="margin-top:-33px;">
+                                            <span class="help-block">Billing Date</span>
+                                            <input type='date' class="form-control input-sm" > <br />
+                                        </div>
+                                    </div>
 
                             </div>
-                            <div class="col-sm-2 ">
-                                <input class="form-control input-sm" placeholder="Enter Patient Name"> <br />
-                            </div>
-                            <div class="col-sm-2 ">
-                                <input class="form-control input-sm" disabled placeholder="Patient Age"> <br />
-                            </div>
-                            <div class="col-sm-2 ">
-                                <input class="form-control input-sm" disabled placeholder="Patient Gender"> <br />
-                            </div>
-                            <div class="col-sm-2 " style="margin-top:-33px;">
-                                <span class="help-block">Billing Date</span>
-                                <input type='date' class="form-control input-sm" > <br />
+                            <hr />
+                            <div class="row">
+                                <div class="col-sm-12" id='invoice_info_holder'>
+                                        <h4 class="basic_info">Invoice</h4>
+                                        <div class="col-sm-2"></div>
+                                        <div class="col-sm-8">
+                                            <div class="row">
+                                                <div class="col-sm-8">
+                                                    <input placeholder="Start Typing Invoice Name Here" class="form-control">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <input placeholder="Enter Price" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2"></div>
+
                             </div>
                         </form>
+
+
                     </div>
+                    <hr />
+                            <div class="row">
+                                <div class="col-sm-12" id='total_info_holder'>
+                                        <h4 class="basic_info">Total</h4>
+                                        <div class="col-sm-2"></div>
+                                        <div class="col-sm-8">
+                                            <div class="row">
+                                                <div class="col-sm-8">
+
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <p class="help-block">Total </p> <span id="bill_total"></span>
+                                                    <p class="help-block">Tax Details  </p> <span id="tax_details">
+                                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SGST</p>
+                                                        <span></span>
+                                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CGST</p>
+                                                        <span></span>
+                                                    </span>
+                                                    <p class="help-block">Discount  </p> <span id="discount_details"></span>
+                                                    <p class="help-block">Final Amount </p> <span id="final_amount"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2"></div>
+
+                            </div>
                 </div>
             </div>
         </div>
